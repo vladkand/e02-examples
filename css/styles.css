@@ -1,0 +1,18 @@
+/* body{font-size: 24px;} */
+
+.example{
+    width: 400px;
+    background-color: rgb(194, 230, 253);
+    font-size: 24px;
+}
+
+section{
+    width: 400px;
+    background-color: rgb(239, 231, 193);
+}
+p{
+    font-size: 32px;
+}
+span{
+    color: red;
+}
