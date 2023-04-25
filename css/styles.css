@@ -1,18 +1,99 @@
 /* body{font-size: 24px;} */
+/* ДЛЯ ВСЕХ ЭЛЕМЕНТОВ */
 
-.example{
-    width: 400px;
-    background-color: rgb(194, 230, 253);
-    font-size: 24px;
+body * {
+   outline: 2px dotted blue;
+}
+.example {
+   width: 400px;
+   background-color: rgb(194, 230, 253);
+   font-size: 24px;
 }
 
-section{
-    width: 400px;
-    background-color: rgb(239, 231, 193);
+section {
+   margin-bottom: 30px;;
+   width: 400px;
+   background-color: rgb(239, 231, 193);
 }
-p{
-    font-size: 32px;
+p {
+   font-size: 32px;
 }
-span{
-    color: red;
+span {
+   color: red;
+}
+
+/* INLINE-BLOKC */
+h1,
+h2,
+h3 {
+   margin: 0;
+   padding: 0;
+}
+.in-block {
+   display: inline-block;
+   outline: 2px solid teal;
+   width: 300px;
+   padding: 10px;
+   background-color: bisque;
+}
+/* Button */
+
+.link-box {
+   display: inline-block;
+   padding: 20px;
+   min-width: 200px;
+
+   color: red;
+   text-decoration: none;
+   border: 2px solid red;
+   background-color: yellowgreen;
+   border-radius: 4px;
+}
+
+.icon {
+   display: inline-block;
+   width: 20px;
+   height: 40px;
+   margin-right: 10px;
+
+   background-color: red;
+}
+
+.icon-one {
+   vertical-align: top;
+
+   /* background-color: white; */
+}
+.icon-two{
+      vertical-align: middle;
+
+}
+
+.border-solid {
+   background-color: goldenrod;
+   border: 3px solid;
+   outline: 3px solid red;
+}
+.border-solid p {
+   outline: 2px dashed;
+   background-color: bisque;
+}
+
+/* КНОПКА В ВИДЕ ССЫЛКИ */
+.btn-href {
+   background-color: #fff;
+   border: none;
+}
+.btn-href:focus {
+   border: 0 solid #fff;
+}
+
+/* marg-auto */
+
+.container{
+   margin-left: auto;
+   margin-right: auto;
+   width: 600px;
+   padding: 0 10px 0;
+   background-color: bisque;
 }
