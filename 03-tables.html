@@ -3,6 +3,8 @@
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="./css/styles.css" />
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
    </head>
@@ -14,6 +16,48 @@
       </header>
       <main>
          <h1>ТАБЛИЦЫ</h1>
+         <h2>Таблица 1</h2>
+         <table border="1" cellpadding="10">
+            <caption>
+               What is the difference between block, inline and inline-block
+            </caption>
+
+            <!-- 1-str -->
+            <tr>
+               <th></th>
+               <th>block</th>
+               <th>inline</th>
+               <th>inline-block</th>
+            </tr>
+
+            <!-- 2-str -->
+            <tr>
+               <th>height determined</th>
+               <td colspan="3">by height of content</td>
+            </tr>
+
+            <!-- 3-STR -->
+            <tr>
+               <th>width determined</th>
+               <td>by width of parent element</td>
+               <td colspan="2">by width of content</td>
+            </tr>
+
+            <!-- 4-STR -->
+            <tr">
+               <th>Is it possible to set height and width</th>
+               <td>yes</td>
+               <td>no</td>
+               <td>yes</td>
+            </tr>
+
+            <!-- 5-STR -->
+            <tr>
+               <th>How line wrapping works</th>
+               <td>always on a new line</td>
+               <td colspan="2">only when filling the width of the parent element</td>
+            </tr>
+         </table>
       </main>
    </body>
 </html>
