@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/psevdo.css" />
+   </head>
+   <body>
+      <header class="section">
+         <nav class="container">
+            <ul>
+               <li><a href="./index.html">На главную</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="section hero container">
+            <h1 class="main-title">Псевдоэлементы</h1>
+         </section>
+         <section class="section container">
+            <h2 class="title">:first - child</h2>
+
+            <div class="box box1">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+            <h2 class="title">Четные</h2>
+            <p class="title">
+               <code
+                  >:nth-child(2n),<br />
+                  :last-child {<br />
+                  background-color: inherit; <br />
+                  }</code
+               >
+            </p>
+            <h2 class="title">четные, кроме последнего</h2>
+
+            <div class="box box-p">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:last - child</h2>
+            <p class="txt">последний элемент</p>
+
+            <div class="box box2">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:nth-last-child(3)</h2>
+            <p class="txt">3-й элемент с конца</p>
+
+            <div class="box box3">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:not(:last-child)</h2>
+            <p class="txt">все кроме последнего</p>
+
+            <div class="box box4">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:not(:nth-last-child(2))</h2>
+            <p class="txt">все кроме 2-го с конца</p>
+
+            <div class="box box5">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:not(:nth-last-child(-n + 3))</h2>
+            <p class="txt">все кроме 3-x с конца</p>
+
+            <div class="box box6">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+               <div class="item"><p>11</p></div>
+               <div class="item"><p>12</p></div>
+               <div class="item"><p>13</p></div>
+               <div class="item"><p>у</p></div>
+               <div class="item"><p>у</p></div>
+               <div class="item"><p>у</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:not(:nth-child(2))</h2>
+            <p class="txt">все, кроме 2-го</p>
+
+            <div class="box box7">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+            </div>
+         </section>
+
+         <section class="section container">
+            <h2 class="title">:not(:nth-child( -n + 4))</h2>
+            <p class="txt">все, кроме первых 4</p>
+
+            <div class="box box8">
+               <div class="item"><p>1</p></div>
+               <div class="item"><p>2</p></div>
+               <div class="item"><p>3</p></div>
+               <div class="item"><p>4</p></div>
+               <div class="item"><p>5</p></div>
+               <div class="item"><p>6</p></div>
+               <div class="item"><p>7</p></div>
+               <div class="item"><p>8</p></div>
+               <div class="item"><p>9</p></div>
+               <div class="item"><p>10</p></div>
+               <div class="item"><p>11</p></div>
+               <div class="item"><p>12</p></div>
+               <div class="item"><p>13</p></div>
+               <div class="item"><p>у</p></div>
+               <div class="item"><p>у</p></div>
+               <div class="item"><p>у</p></div>
+            </div>
+         </section>
+      </main>
+   </body>
+</html>
