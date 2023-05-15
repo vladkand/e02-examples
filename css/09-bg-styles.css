@@ -1,0 +1,67 @@
+.container {
+   text-align: center;
+   width: 900px;
+   height: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   padding-top: 10px;
+
+   font-size: 20px;
+   color: #fff;
+
+   /* background-image: linear-gradient (to top, red, teal, blue); */
+}
+
+.sand {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 0, 200, 0.4)),
+      url(../bg-images/tx_sand_dark.jpg);
+   background-repeat: repeat-x;
+   background-position: 0 0, 0 50px;
+}
+
+.colorstop {
+   background-image: linear-gradient(
+      to bottom,
+      orange 20%,
+      blue 2%,
+      blue 40%,
+      red 40%,
+      red 80%,
+      teal 80%
+   );
+}
+.radial {
+   background-image: radial-gradient(
+      circle,
+      rgba(255, 0, 0, 0.994) 5%,
+      rgb(255, 170, 0) 20%,
+      rgba(62, 62, 171, 0.839) 70%,
+      rgb(6, 1, 100)
+   );
+}
+
+.rad-colorstop {
+   background-image: radial-gradient(
+      ellipse at bottom left,
+      orange 10%,
+      blue 10%,
+      blue 45%,
+      red 45%,
+      red 80%,
+      teal 80%
+   );
+}
+.zebra {
+   border-radius: 50%;
+   background-image: repeating-radial-gradient(
+      circle at center,
+
+      rgb(28, 24, 21),
+      rgb(28,24,21) 50px,
+     
+
+      rgb(210, 186, 138) 80px,
+      rgb(210, 186, 138) 90px /* Опеределяет размер градиента */
+   );
+}
