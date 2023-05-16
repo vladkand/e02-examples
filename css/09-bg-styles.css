@@ -15,7 +15,7 @@
    font-size: 20px;
    color: #fff;
 
-   border: 10px dashed #d100ae;
+   border: 10px dashed #ffffff;
 
    /* background-image: linear-gradient (to top, red, teal, blue); */
 }
@@ -25,7 +25,6 @@
       url(../bg-images/tx_sand_dark.jpg);
    background-repeat: repeat-x;
    background-position: 0 0, 0 50px;
-   
 }
 
 .colorstop {
@@ -61,7 +60,6 @@
       teal 80%
    );
    background-clip: padding-box;
-   
 }
 .zebra {
    border-radius: 50%;
@@ -81,6 +79,11 @@
    display: flex;
    gap: 20px;
    flex-wrap: wrap;
+   justify-content: center;
+   width: 800px;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
    color: black;
 }
 
