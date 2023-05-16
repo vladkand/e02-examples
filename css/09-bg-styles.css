@@ -10,10 +10,12 @@
    margin-left: auto;
    margin-right: auto;
    margin-top: 20px;
-   padding-top: 10px;
+   padding: 20px;
 
    font-size: 20px;
    color: #fff;
+
+   border: 10px dashed #d100ae;
 
    /* background-image: linear-gradient (to top, red, teal, blue); */
 }
@@ -23,18 +25,20 @@
       url(../bg-images/tx_sand_dark.jpg);
    background-repeat: repeat-x;
    background-position: 0 0, 0 50px;
+   
 }
 
 .colorstop {
    background-image: linear-gradient(
       to bottom,
       orange 20%,
-      blue 2%,
+      blue 20%,
       blue 40%,
       red 40%,
       red 80%,
       teal 80%
    );
+   background-clip: content-box;
 }
 .radial {
    background-image: radial-gradient(
@@ -56,6 +60,8 @@
       red 80%,
       teal 80%
    );
+   background-clip: padding-box;
+   
 }
 .zebra {
    border-radius: 50%;
@@ -65,8 +71,8 @@
       rgb(28, 24, 21),
       rgb(28, 24, 21) 50px,
 
-      rgb(210, 186, 138) 80px,
-      rgb(210, 186, 138) 90px /* Опеределяет размер градиента */
+      rgb(210, 186, 138) 50px,
+      rgb(210, 186, 138) 80px /* Опеределяет размер градиента */
    );
 }
 
@@ -78,7 +84,7 @@
    color: black;
 }
 
-.thumbs {
+.thumb {
    background-color: tomato;
 }
 img {
@@ -87,22 +93,21 @@ img {
    height: 100%;
 }
 
-.thumbs-portret {
+.thumb-portret {
    width: 200px;
    height: 300px;
 }
 
-.thumbs-album {
+.thumb-album {
    width: 300px;
    height: 200px;
 }
 
-.thumbs-portret > img {
+.thumb-portret > img {
    object-fit: contain;
-      object-position: 0 0;
-
+   object-position: 0 0;
 }
-.thumbs-album > img {
+.thumb-album > img {
    object-fit: contain;
    object-position: 20px 20px;
 }
