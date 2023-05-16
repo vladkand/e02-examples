@@ -17,3 +17,23 @@
 ## background-position
 
     background-position: x y
+
+## для контентных картинок аналог
+
+    object-fit и object-position
+
+    для этого картинку -> в .thumb;
+    -> img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        }
+    .thumbs {
+        width: 200px;
+        height: 300px;
+        }
+
+    .thumbs-album > img {
+        object-fit: contain;
+        object-position: 20px 20px;
+        }
