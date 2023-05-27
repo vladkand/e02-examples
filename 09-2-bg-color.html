@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>THUMB</title>
       <link rel="stylesheet" href="./css/normmin.css" />
       <link rel="stylesheet" href="./css/common.css" />
       <link rel="stylesheet" href="./css/09-bg-styles.css" />
@@ -24,6 +24,46 @@
          <div class="thumb thumb-album">
             <img src="./images/lines-7954992_640.jpg" alt="image" />
          </div>
+
+         <ol class="list">
+            <li class="item">
+               Изображение загнать в .thumb<br />
+               <code
+                  >div class="thumb"><br />
+                  img src="" alt="" / <br />
+                  /div
+               </code>
+               <hr />
+            </li>
+            <li class="item">
+               Для .thumb задать width & height<br />
+               <code
+                  >.thumbs {<br />
+                  width: 400px;<br />
+                  height: 300px;<br />
+                  } .
+               </code>
+
+               <hr />
+            </li>
+            <li class="item">
+               Для картинки <br /><code
+                  >-> img {<br />
+                  display: block;<br />
+                  width: 100%;<br />
+                  height: 100%; <br />
+                  } <br />
+                  <hr />
+               </code>
+            </li>
+            <li class="item">
+               <code
+                  >thumbs-album > img { object-fit: contain;<br />
+                  object-position: 20px 20px;<br />
+                  }</code
+               >
+            </li>
+         </ol>
       </section>
 
       <!-- FILL -->
