@@ -11,3 +11,27 @@
    font-size: 20px;
    color: #fff;
 } */
+
+/*  === */
+
+.color-box {
+   display: flex;
+   justify-content: center;
+}
+
+.circus {
+   fill: #c4c4c4;
+   outline: 4px solid #ffffff;
+   border-radius: 50%;
+   outline-offset: 15px;
+}
+
+.pict:nth-child(1) .circus:hover {
+   fill: green;
+}
+.pict:nth-child(2) .circus:hover {
+   fill: yellow;
+}
+.pict:nth-child(3) .circus:hover {
+   fill: red;
+}
