@@ -1,32 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Embeded CSS</title>
-      <style>
-         .link {
-            color: teal;
-            font-size: 16px;
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <h1>Втроенные стили</h1>
-         <nav class="nav-main">
-            <ul class="example">
-               <li><a class="link" href="./index.html">Ingex</a></li>
-               <li><a class="link" href="./00embedet-css.html">Встроенные стили</a></li>
-               <li><a class="link" href="./01ancer.html">Якорь(ancer)</a></li>
-               <li><a class="link" href="#">NEXTY</a></li>
-               <li><a class="link" href="./02list.html">СПИСКИ</a></li>
-               <li><a class="link" href="./03-tables.html">Таблицы</a></li>
-               <li><a class="link" href="./04-time.html">ТЕГ TIME &#10088; время &#10089;</a></li>
-               <li><a class="link" href="./05-inline-block.html">Inline-Block</a></li>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Embeded CSS</title>
+   <link rel="stylesheet" href="./css/styles.css">
+   <style>
+      h1 {
+         font-size: 30px;
+         text-align: center;
+      }
+
+      .link {
+         font-size: 18px;
+         font-style: italic;
+         font-weight: 800;
+         color: teal;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>Втроенные стили</h1>
+      <h2 style="color: red; font-size: 16px; font-weight: 800 ;">!!! Открыть Dew-Tools</h2>
+      <nav class="nav-main">
+         <ul class="example">
+            <li><a class="link" href="./index.html">Ingex</a></li>
+
+         </ul>
+
+      </nav>
+   </header>
+   <main>
+      <div class="box">
+         Встроенные стили
+         Встроенные (инлайн) стили задаются тегу прямо в атрибуте style. Их невозможно масштабировать, сложно
+         переопределять и
+         использовать повторно, поэтому они применяются в очень редких случаях. Например, для динамических стилей
+         которые
+         устанавливаются во время выполнения JavaScript кода, когда мы заранее не знаем какое будет значение свойства.
+
+         <p style="color:blue; font-size:24px;">Этот текст будет синим.</p>
+      </div>
+      <section class="inline-table">
+         <h2>Встроенная таблица стилей</h2>
+         <p>
+            При таком подходе CSS-правила добавляются внутрь тега
+
+         </p>
+
+      </section>
+      <section class="mnemonick">
+         <h2 style="padding: 5px 8px; background-color: tomato; font-size: 18px; margin-bottom: 10px;">Мнемоники</h2>
+         <code>
+                        &#60 style &#62;
+                     </code>
+         <code>&lt;ul&gt;</code>
+         &lt;ul&gt;
+         &copy
+         &#188;
+         &frac14;
+      </section>
+
+      <ul class="menu-list list">
+         <li class="menu-item">
+            <a href="./index.html" class="menu-link link" style="color: aliceblue;">
+               Start
+            </a>
+            <ul class="submenu list">
+
+               <li class="item">
+                  <a class="link" href="./00embedet-css.html">Встроенные стили</a>
+               </li>
+
+               <li class="item"><a class="link" href="./01ancer.html">Якорь(ancer)</a>
+               </li>
+
+               <li class="item"><a class="link" href="./02list.html">Списки</a>
+               </li>
+
+               <li class="item"><a class="link" href="./03-tables.html">Таблицы</a>
+               </li>
+
+               <li class="item">
+                  <a class="link" href="./04-time.html">Тег TIME &#10088; время &#10089;</a>
+               </li>
+
+               <li class="item">
+                  <a class="link" href="./05-inline-block.html">Inline-Block</a>
+               </li>
+
+               <li class="item"><a class="link" href="./07-psevdo.html">Псевдоклассы</a></li>
+
+               <li class="item"><a class="link" href="./06-flex.html">Flex </a></li>
+
+               <li class="item">
+                  <a class="link" href="./08-flex-basis-grov-shrink.html">Flex-shrink-Grow</a>
+               </li>
+               <li class="item">
+                  <a class="link" href="./09-background.html">ФОН и картинки</a>
+               </li>
+               <li class="item">
+                  <a class="link" href="./m04-02-svg.html">SVG</a>
+               </li>
+
+               <li class="item">
+                  <a class="link" href="https://symbl.cc/ru/html-entities/" target="_blank"
+                     rel="noopener noreffere nofoll">Мнемоники</a>
+               </li>
             </ul>
-         </nav>
-      </header>
-   </body>
+         </li>
+      </ul>
+   </main>
+</body>
+
 </html>
