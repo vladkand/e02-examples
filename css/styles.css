@@ -49,9 +49,7 @@ section {
 }
 
 /* --- HEADER --- */
-.header .title {
-   /* margin-bottom: 10px; */
-}
+
 .nav-main {
    margin-top: 10px;
    /* background-color: antiquewhite; */
@@ -66,8 +64,9 @@ section {
    /* width: 600px; */
 }
 
-.menu-list:hover .submenu {
-   opacity: 1;
+.menu-item:hover .submenu {
+   /* opacity: 1; */
+   display: block;
 }
 
 .menu-item {
@@ -90,7 +89,8 @@ section {
    top: 100%;
    left: 0;
 
-   opacity: 0;
+   /* opacity: 0; */
+   display: none;
    background-color: aliceblue;
 }
 
