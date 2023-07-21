@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mod-06-form.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="link">Главная
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="">
+
+            </form>
+
+            <form class="js-speaker-form in-label">
+                <label>
+                    <p>input встроен в label</p>
+                    <!-- Noname in label -->
+                    <input type="text" name="name" id="name" />
+                </label>
+            </form>
+
+            <form class="js-speaker-form out-label">
+                <!-- NAme -->
+                <label for="name">MyName</label>
+                <input type="text" name="name" id="name" />
+                <br />
+                <!-- TEL -->
+                <label for="tel">Telephone</label>
+                <input type="tel" name="tel" id="tel" />
+                <br />
+                <!-- MAIL -->
+                <label for="mail">Mail</label>
+                <input type="email" name="tel" id="mail" />
+                <br />
+                <button type="submit">
+                    Click
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <script>
+        (() => {
+            document
+                .querySelector(".js-speaker-form")
+                .addEventListener("submit", (e) => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`)
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
+</body>
+
+</html>

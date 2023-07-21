@@ -56,7 +56,7 @@ section {
 }
 
 .menu-list {
-   position: relative;
+   /* position: relative; */
    display: inline-flex;
    min-width: 200px;
    margin-right: auto;
@@ -64,8 +64,21 @@ section {
    /* width: 600px; */
 }
 
+.menu-item{
+   margin-right: 10px;
+}
+
+.menu-item{
+   position: relative;
+}
+
+/* 
+.start{
+   position: relative;
+} */
+
 .menu-item:hover .submenu {
-   /* opacity: 1; */
+
    display: block;
 }
 
