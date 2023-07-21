@@ -30,9 +30,9 @@ p {
    padding: 20px;
 }
 
-.container > * {
+/* .container > * {
    margin-bottom: 30px;
-}
+} */
 
 ul {
    list-style: none;

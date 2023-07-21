@@ -1,1 +1,12 @@
-*   Не использовать input type=batton=> его ПЛОХО оформлять
+*   Input лучше не вставлять в LABEL
+    --label  отдельно
+    -- input отдельно 
+    => связать через id 
+
+
+<form>
+    <label for="noname">NAME</label>
+    <input type="text" name="noname" id="noname">
+</form>    
+
+* ->  Не использовать input type="batton" -> его ПЛОХО оформлять
