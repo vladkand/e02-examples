@@ -10,3 +10,16 @@
 </form>    
 
 * ->  Не использовать input type="batton" -> его ПЛОХО оформлять
+
+* Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
+
+    <input type="radio" name="level" value="junior" id="junior">
+    <label for="junior">Junior</label>
+
+    <input type="radio" name="level" value="midle" id="midle">
+    <label for="midle">Midle</label>
+
+    <input type="radio" name="level" value="senior" id="senior">
+    <label for="senior">Senior</label>
+
+    |

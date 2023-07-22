@@ -37,19 +37,37 @@
 
       <h2>INPUT отдельно от label и связан ч-з id</h2>
 
-      <form class="js-speaker-form d-flex">
+      <form class="js-speaker-form out-label">
+        <!-- NAme -->
+        <label for="name">MyName</label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <!-- TEL -->
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel" />
+        <br />
+        <!-- MAIL -->
+        <label for="mail">Mail</label>
+        <input type="email" name="tel" id="mail" />
+        <br />
 
-        <label for="noname">NAME</label>
-        <input type="text" name="noname" id="noname"><br>
+        <!--  Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!! -->
+        <!-- <input type="radio" name="level" value="junior" id="junior" />
+        <label for="junior">Junior</label>
 
-        <label for="tel">Phone</label>
-        <input type="tel" name="tel" id="tel"><br>
+        <input type="radio" name="level" value="midle" id="midle" />
+        <label for="midle">Midle</label>
 
-        <label for="email">Mail</label>
-        <input type="email" name="email" id="email"><br>
+        <input type="radio" name="level" value="senior" id="senior" />
+        <label for="senior">Senior</label>
+        <p class="descr-theme" style="color: red; font-weight: 800;">
+          Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
+        </p> -->
 
-        <button type="submit">Click</button>
-
+        <br />
+        <button type="submit">
+          Click
+        </button>
       </form>
     </div>
 
