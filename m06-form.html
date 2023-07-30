@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/common.css">
 </head>
@@ -20,12 +25,12 @@
       </nav>
     </div>
   </header>
-  <main class="container">
+  <main class="">
     <div class="container">
 
       <h2>INPUT внутри label (так плохо стилизировать)</h2>
 
-      <form class="js-speaker-forma">
+      <form class="">
         <label>NonaMe
           <input type="text" name="myname">
         </label>
@@ -33,43 +38,63 @@
       </form>
     </div>
 
-    <div class="container">
+    <div class="container"></div>
+    <h2>INPUT отдельно от label и связан ч-з id</h2>
 
-      <h2>INPUT отдельно от label и связан ч-з id</h2>
+    <form class="js-speaker-form">
+      <!-- NAme -->
+      <label for="name">MyName</label>
+      <input type="text" name="name" id="name" />
+      <br />
+      <!-- TEL -->
+      <label for="tel">Telephone</label>
+      <input type="tel" name="tel" id="tel" />
+      <br />
+      <!-- MAIL -->
+      <label for="mail">Mail</label>
+      <input type="email" name="mail" id="mail" />
+      <br />
 
-      <form class="js-speaker-form">
-        <!-- NAme -->
-        <label for="name">MyName</label>
-        <input type="text" name="name" id="name" />
-        <br />
-        <!-- TEL -->
-        <label for="tel">Telephone</label>
-        <input type="tel" name="tel" id="tel" />
-        <br />
-        <!-- MAIL -->
-        <label for="mail">Mail</label>
-        <input type="email" name="tel" id="mail" />
-        <br />
+      <!--  Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!! -->
+      <!-- <input type="radio" name="level" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+    
+            <input type="radio" name="level" value="midle" id="midle" />
+            <label for="midle">Midle</label>
+    
+            <input type="radio" name="level" value="senior" id="senior" />
+            <label for="senior">Senior</label>
+            <p class="descr-theme" style="color: red; font-weight: 800;">
+              Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
+            </p> -->
 
-        <!--  Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!! -->
-        <!-- <input type="radio" name="level" value="junior" id="junior" />
-        <label for="junior">Junior</label>
+      <br />
 
-        <input type="radio" name="level" value="midle" id="midle" />
-        <label for="midle">Midle</label>
+      <input type="checkbox" name="lang" id="html" checked />
+      <label for="html">HTML</label>
 
-        <input type="radio" name="level" value="senior" id="senior" />
-        <label for="senior">Senior</label>
-        <p class="descr-theme" style="color: red; font-weight: 800;">
-          Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
-        </p> -->
+      <input type="checkbox" name="lang" id="css" />
+      <label for="css">CSS</label>
 
-        <br />
-        <button type="submit">
-          Click
-        </button>
-      </form>
-    </div>
+      <input type="checkbox" name="lang" id="js" />
+      <label for="js">JS</label>
+      <br />
+
+      <input type="radio" name="skills" id="junior" />
+      <label for="junior">Jun</label>
+
+      <input type="radio" name="skills" id="midl">
+      <label for="midl">Midle</label>
+
+
+      <input type="radio" name="skills" id="senior">
+      <label for="senior">Senior-Proffesor</label>
+
+      <br />
+      <button type="submit">
+        Click
+      </button>
+    </form>
 
 
   </main>
