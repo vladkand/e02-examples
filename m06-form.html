@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/common.css" />
+      <link rel="stylesheet" href="./css/m06-form.css" />
+   </head>
 
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/common.css">
-</head>
+   <body>
+      <header class="section header">
+         <div class="container head-container">
+            <nav class="nav-main">
+               <a class="link" href="./index.html"> Start </a>
+            </nav>
+         </div>
+      </header>
+      <main class="">
+         <div class="container">
+            <h2>INPUT внутри label (так плохо стилизировать)</h2>
 
-<body>
-  <header class="section header">
-    <div class="container head-container">
+            <form class="">
+               <label
+                  >NonaMe
+                  <input type="text" name="myname" />
+               </label>
+               <button type="submit">Submit</button>
+            </form>
+         </div>
 
-      <nav class="nav-main">
-        <a class=" link" href="./index.html">
-          Start
-        </a>
-      </nav>
-    </div>
-  </header>
-  <main class="">
-    <div class="container">
+         <div class="container"></div>
+         <h2>INPUT отдельно от label и связан ч-з id</h2>
 
-      <h2>INPUT внутри label (так плохо стилизировать)</h2>
+         <form class="js-speaker-form">
+            <!-- NAme -->
+            <label for="name">MyName</label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <!-- TEL -->
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel" />
+            <br />
+            <!-- MAIL -->
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" id="mail" />
+            <br />
 
-      <form class="">
-        <label>NonaMe
-          <input type="text" name="myname">
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
-    <div class="container"></div>
-    <h2>INPUT отдельно от label и связан ч-з id</h2>
-
-    <form class="js-speaker-form">
-      <!-- NAme -->
-      <label for="name">MyName</label>
-      <input type="text" name="name" id="name" />
-      <br />
-      <!-- TEL -->
-      <label for="tel">Telephone</label>
-      <input type="tel" name="tel" id="tel" />
-      <br />
-      <!-- MAIL -->
-      <label for="mail">Mail</label>
-      <input type="email" name="mail" id="mail" />
-      <br />
-
-      <!--  Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!! -->
-      <!-- <input type="radio" name="level" value="junior" id="junior" />
+            <!--  Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!! -->
+            <!-- <input type="radio" name="level" value="junior" id="junior" />
             <label for="junior">Junior</label>
     
             <input type="radio" name="level" value="midle" id="midle" />
@@ -68,53 +69,66 @@
               Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
             </p> -->
 
-      <br />
+            <br />
 
-      <input type="checkbox" name="lang" id="html" checked />
-      <label for="html">HTML</label>
+            <input type="checkbox" name="lang" id="html" checked />
+            <label for="html">HTML</label>
 
-      <input type="checkbox" name="lang" id="css" />
-      <label for="css">CSS</label>
+            <input type="checkbox" name="lang" id="css" />
+            <label for="css">CSS</label>
 
-      <input type="checkbox" name="lang" id="js" />
-      <label for="js">JS</label>
-      <br />
+            <input type="checkbox" name="lang" id="js" />
+            <label for="js">JS</label>
+            <br />
 
-      <input type="radio" name="skills" id="junior" />
-      <label for="junior">Jun</label>
+            <input type="radio" name="skills" id="junior" />
+            <label for="junior">Jun</label>
 
-      <input type="radio" name="skills" id="midl">
-      <label for="midl">Midle</label>
+            <input type="radio" name="skills" id="midl" />
+            <label for="midl">Midle</label>
 
+            <input type="radio" name="skills" id="senior" />
+            <label for="senior">Senior-Proffesor</label>
+            <br />
 
-      <input type="radio" name="skills" id="senior">
-      <label for="senior">Senior-Proffesor</label>
+            <label for="date">Дата мероприятия</label>
+            <input
+               type="datetime-local"
+               name="date"
+               id="date"
+               min="2023-08-04T04:00"
+               max="2023-09-01T18:00"
+            />
+            <br />
 
-      <br />
-      <button type="submit">
-        Click
-      </button>
-    </form>
+            <label for="document">Upload file</label>
+            <input type="file" name="document" id="document" />
+            <br />
 
+            <label for="comment">Оставить комент</label>
+            <textarea name="comment" id="comment" rows="5"></textarea>
+            <br />
 
-  </main>
+            <input type="checkbox" name="subm" id="politic" />
+            <label for="politic">Согласен на все</label>
+            <br />
 
-  <script>
-    (() => {
-      document
-        .querySelector(".js-speaker-form")
-        .addEventListener("submit", (e) => {
-          e.preventDefault();
+            <button type="submit">Заявиться</button>
+         </form>
+      </main>
 
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`)
-          );
+      <script>
+         (() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+               e.preventDefault();
 
-          e.currentTarget.reset();
-        });
-    })();
-  </script>
+               new FormData(e.currentTarget).forEach((value, name) =>
+                  console.log(`${name}: ${value}`)
+               );
 
-</body>
-
+               e.currentTarget.reset();
+            });
+         })();
+      </script>
+   </body>
 </html>
