@@ -40,7 +40,6 @@
          </div>
 
          <div class="container"></div>
-         <h2>INPUT отдельно от label и связан ч-з id</h2>
 
          <form class="js-speaker-form">
             <!-- NAme -->
@@ -56,7 +55,9 @@
             <input type="email" name="mail" id="mail" />
             <br />
 
-            <!--  Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!! -->
+            <!-- INPUT внутри label (так плохо стилизировать) -->
+
+            <!--  Для группы radiobatton и checkbox значение "name" должно быть ОДИНАКОВОЕ!!! -->
             <!-- <input type="radio" name="level" value="junior" id="junior" />
             <label for="junior">Junior</label>
     
@@ -71,6 +72,11 @@
 
             <br />
 
+            <p>Тема доклада</p>
+            <label for="all">Web-developmant</label>
+            <input type="checkbox" name="lang" id="all" disabled checked />
+            <br />
+
             <input type="checkbox" name="lang" id="html" checked />
             <label for="html">HTML</label>
 
@@ -79,6 +85,10 @@
 
             <input type="checkbox" name="lang" id="js" />
             <label for="js">JS</label>
+
+            <input type="checkbox" name="lang" id="geo" disabled />
+            <label for="geo">Geografic</label>
+
             <br />
 
             <input type="radio" name="skills" id="junior" />
