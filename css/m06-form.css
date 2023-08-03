@@ -1,3 +1,23 @@
 textarea {
    resize: none;
 }
+
+.form {
+   width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+
+   background-color: #eee;
+   outline: 1px solid tomato;
+}
+
+.form-field {
+   display: flex;
+   margin-bottom: 8px;
+   margin-right: 50px;
+   /* justify-content: space-between; */
+}
+
+.label-text {
+   width: 100px;
+}

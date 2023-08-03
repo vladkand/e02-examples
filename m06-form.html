@@ -41,19 +41,24 @@
 
          <div class="container"></div>
 
-         <form class="js-speaker-form">
-            <!-- NAme -->
-            <label for="name">MyName</label>
-            <input type="text" name="name" id="name" />
-            <br />
-            <!-- TEL -->
-            <label for="tel">Telephone</label>
-            <input type="tel" name="tel" id="tel" />
-            <br />
-            <!-- MAIL -->
-            <label for="mail">Mail</label>
-            <input type="email" name="mail" id="mail" autocomplete="off" />
-            <br />
+         <form class="form js-speaker-form" autocomplete="on">
+            <div class="form-field">
+               <!-- NAme -->
+               <label class="label-text" for="name">MyName</label>
+               <input type="text" name="name" id="name" autofocus />
+            </div>
+
+            <div class="form-field">
+               <!-- TEL -->
+               <label class="label-text" for="tel">Telephone</label>
+               <input type="tel" name="tel" id="tel" />
+            </div>
+
+            <div class="form-field">
+               <!-- MAIL -->
+               <label class="label-text" for="mail">Mail</label>
+               <input type="email" name="mail" id="mail" autocomplete="name" />
+            </div>
 
             <!-- INPUT внутри label (так плохо стилизировать) -->
 
@@ -69,8 +74,6 @@
             <p class="descr-theme" style="color: red; font-weight: 800;">
               Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
             </p> -->
-
-            <br />
 
             <p>Тема доклада</p>
             <label for="all">Web-developmant</label>
@@ -124,6 +127,8 @@
             <br />
 
             <button type="submit">Заявиться</button>
+
+            <!--   Плейсхолдер(placeholder) не заменяет "label"  -->
          </form>
       </main>
 
