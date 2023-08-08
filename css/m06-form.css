@@ -12,12 +12,22 @@ textarea {
 }
 
 .form-field {
+   flex-basis: 100%;
    display: flex;
    margin-bottom: 8px;
    margin-right: 50px;
    /* justify-content: space-between; */
+   outline: 1px solid teal;
 }
 
-.label-text {
-   width: 100px;
+.form-label {
+   /* flex-grow: 1; */
+   /* flex-shrink: 1; */
+
+   flex-basis: 30%;
+}
+
+.form-input {
+   /* flex-grow: 1; */
+   margin-left: 10px;
 }
