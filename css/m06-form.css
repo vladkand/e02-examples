@@ -10,6 +10,9 @@ textarea {
    background-color: #eee;
    outline: 1px solid tomato;
 }
+.form div + div {
+   margin-top: 20px;
+}
 
 .form-field {
    flex-basis: 100%;
@@ -25,13 +28,13 @@ textarea {
 
 .form-input {
    text-align: left;
-   margin: 0;
+   /* margin: 0; */
    padding: 5px 8px;
+   border: 2px solid red;
+   border-radius: 6px;
 }
 
 .form-input::placeholder {
-   text-align: center;
-
    color: blue;
    font-style: italic;
 }

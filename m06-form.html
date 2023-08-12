@@ -13,7 +13,6 @@
          referrerpolicy="no-referrer"
       />
 
-      <link rel="stylesheet" href="./css/styles.css" />
       <link rel="stylesheet" href="./css/common.css" />
       <link rel="stylesheet" href="./css/m06-form.css" />
    </head>
@@ -42,8 +41,9 @@
          <div class="container"></div>
 
          <form class="form js-speaker-form" autocomplete="on">
+            <!-- FORM FIELD -->
             <div class="form-field">
-               <!-- NAme -->
+               <!-- ===== FIELD NAME ===== -->
                <label class="form-label" for="name">MyName</label>
                <input
                   class="form-input"
@@ -56,7 +56,7 @@
             </div>
 
             <div class="form-field">
-               <!-- TEL -->
+               <!-- FIELD TEL -->
                <label class="form-label" for="tel">Telephone</label>
                <input
                   class="form-input"
@@ -80,49 +80,51 @@
                />
             </div>
 
-            <!-- INPUT внутри label (так плохо стилизировать) -->
+            <!-- ===== FORM-CHECK ===== -->
+            <div class="group" role="group">
+               <h2 class="group-title">Тема доклада</h2>
 
-            <!--  Для группы radiobatton и checkbox значение "name" должно быть ОДИНАКОВОЕ!!! -->
-            <!-- <input type="radio" name="level" value="junior" id="junior" />
-            <label for="junior">Junior</label>
-    
-            <input type="radio" name="level" value="midle" id="midle" />
-            <label for="midle">Midle</label>
-    
-            <input type="radio" name="level" value="senior" id="senior" />
-            <label for="senior">Senior</label>
-            <p class="descr-theme" style="color: red; font-weight: 800;">
-              Для группы radiobatton значение "name" должно быть ОДИНАКОВОЕ!!!
-            </p> -->
+               <ul class="topic-options">
+                  <li class="">
+                     <label for="all">Web-developmant</label>
+                     <input type="checkbox" name="lang" id="all" disabled checked />
+                  </li>
+                  <li class="item">
+                     <input type="checkbox" name="lang" id="html" checked />
+                     <label for="html">HTML</label>
+                  </li>
+                  <li class="item">
+                     <input type="checkbox" name="lang" id="css" />
+                     <label for="css">CSS</label>
+                  </li>
+                  <li class="item">
+                     <input type="checkbox" name="lang" id="js" /> <label for="js">JS</label>
+                  </li>
+                  <li class="item">
+                     <input type="checkbox" name="lang" id="geo" disabled />
+                     <label for="geo">Web-Magic</label>
+                  </li>
+               </ul>
+            </div>
 
-            <p>Тема доклада</p>
-            <label for="all">Web-developmant</label>
-            <input type="checkbox" name="lang" id="all" disabled checked />
-            <br />
+            <!-- ===== FODM-RADIO ===== -->
+            <div class="group" role="group">
+               <ul>
+                  <li class="">
+                     <input type="radio" name="skills" id="junior" checked />
+                     <label for="junior">Jun</label>
+                  </li>
+                  <li class="">
+                     <input type="radio" name="skills" id="midl" /> <label for="midl">Midle</label>
+                  </li>
+                  <li class="">
+                     <input type="radio" name="skills" id="senior" />
+                     <label for="senior">Senior-Proffesor</label>
+                  </li>
+               </ul>
 
-            <input type="checkbox" name="lang" id="html" checked />
-            <label for="html">HTML</label>
-
-            <input type="checkbox" name="lang" id="css" />
-            <label for="css">CSS</label>
-
-            <input type="checkbox" name="lang" id="js" />
-            <label for="js">JS</label>
-
-            <input type="checkbox" name="lang" id="geo" disabled />
-            <label for="geo">Geografic</label>
-
-            <br />
-
-            <input type="radio" name="skills" id="junior" />
-            <label for="junior">Jun</label>
-
-            <input type="radio" name="skills" id="midl" />
-            <label for="midl">Midle</label>
-
-            <input type="radio" name="skills" id="senior" />
-            <label for="senior">Senior-Proffesor</label>
-            <br />
+               <br />
+            </div>
 
             <label for="date">Дата мероприятия</label>
             <input
@@ -150,6 +152,18 @@
 
             <!--   Плейсхолдер(placeholder) не заменяет "label"  -->
          </form>
+
+         <!-- INPUT внутри label (так плохо стилизировать) -->
+
+         <!--  Для группы radiobatton и checkbox значение "name" должно быть ОДИНАКОВОЕ!!! -->
+         <!-- <input type="radio" name="level" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+    
+            <input type="radio" name="level" value="midle" id="midle" />
+            <label for="midle">Midle</label>
+    
+            <input type="radio" name="level" value="senior" id="senior" />
+            <label for="senior">Senior</label> -->
       </main>
 
       <script>
