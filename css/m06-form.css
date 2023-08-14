@@ -26,15 +26,39 @@ textarea {
    margin-top: 10px;
 }
 
+.form-label {
+   outline: 1px solid teal;
+}
+
 .form-input {
    text-align: left;
    /* margin: 0; */
+   margin-top: 5px;
    padding: 5px 8px;
-   border: 2px solid red;
+   border: 2px solid blue;
    border-radius: 6px;
 }
 
 .form-input::placeholder {
-   color: blue;
+   color: #1a4a8a;
    font-style: italic;
+}
+
+/* ===== FORM-CHECK ===== */
+
+.topic-options .item {
+   display: flex;
+   align-items: center;
+}
+
+.topic-options input[type='checkbox'] {
+   width: 20px;
+   height: 20px;
+
+   border: 2px solid red;
+   border-radius: 50%;
+}
+
+.topic-options label {
+   margin-left: 10px;
 }
