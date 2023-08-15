@@ -8,7 +8,9 @@ textarea {
    padding: 20px;
 
    background-color: #eee;
-   outline: 1px solid tomato;
+   /* outline: 1px solid tomato; */
+
+   box-shadow: 0 0 10px 3px rgba(20, 40, 100, 0.4);
 }
 .form div + div {
    margin-top: 20px;
@@ -25,10 +27,11 @@ textarea {
 .form-field + .form-field {
    margin-top: 10px;
 }
-
+/* 
 .form-label {
    outline: 1px solid teal;
-}
+} 
+*/
 
 .form-input {
    text-align: left;
@@ -76,6 +79,10 @@ input[type='radio'] {
    height: 20px;
 }
 
+/* ===== DATE-TIME-LOCAL ===== */
+
+.form-field .date {
+}
 /* ===== FORM-BTN ===== */
 .form-btn {
    margin-top: 20px;
