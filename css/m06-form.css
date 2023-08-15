@@ -46,12 +46,18 @@ textarea {
 
 /* ===== FORM-CHECK ===== */
 
-.topic-options .item {
+/* .topic-options .item {
+   display: flex;
+   align-items: center;
+} */
+
+.form-item {
    display: flex;
    align-items: center;
 }
 
-.topic-options input[type='checkbox'] {
+input[type='checkbox'],
+input[type='radio'] {
    width: 20px;
    height: 20px;
 
@@ -59,6 +65,13 @@ textarea {
    border-radius: 50%;
 }
 
-.topic-options label {
+.form-item label,
+.form-item label {
    margin-left: 10px;
+}
+
+/* ===== FORM-RADIO ===== */
+.skills-options input[type='radio'] {
+   width: 20px;
+   height: 20px;
 }

@@ -85,22 +85,22 @@
                <h2 class="group-title">Тема доклада</h2>
 
                <ul class="topic-options list">
-                  <li class="item check-item">
+                  <li class="item form-item check-item">
                      <input class="" type="checkbox" name="lang" id="all" disabled checked />
                      <label class="" for="all">Web-developmant</label>
                   </li>
-                  <li class="item check-item">
+                  <li class="item form-item check-item">
                      <input type="checkbox" name="lang" id="html" checked />
                      <label for="html">HTML</label>
                   </li>
-                  <li class="item check-item">
+                  <li class="item form-item check-item">
                      <input type="checkbox" name="lang" id="css" />
                      <label for="css">CSS</label>
                   </li>
-                  <li class="item check-item">
+                  <li class="item form-item check-item">
                      <input type="checkbox" name="lang" id="js" /> <label for="js">JS</label>
                   </li>
-                  <li class="item check-item">
+                  <li class="item form-item check-item">
                      <input type="checkbox" name="lang" id="geo" disabled />
                      <label for="geo">Web-Magic</label>
                   </li>
@@ -112,14 +112,14 @@
                <h2 class="group-title">Level</h2>
 
                <ul class="skills-options list">
-                  <li class="item radio-item">
+                  <li class="item form-item radio-item">
                      <input type="radio" name="skills" id="junior" checked />
-                     <label for="junior">Jun</label>
+                     <label class="check-label" for="junior">Jun</label>
                   </li>
-                  <li class="item radio-item">
+                  <li class="item form-item radio-item">
                      <input type="radio" name="skills" id="midl" /> <label for="midl">Midle</label>
                   </li>
-                  <li class="item radio-item">
+                  <li class="item form-item form-item radio-item">
                      <input type="radio" name="skills" id="senior" />
                      <label for="senior">Senior-Proffesor</label>
                   </li>
@@ -152,12 +152,16 @@
             <div class="form-field">
                <label for="comment">Оставить комент</label>
                <textarea name="comment" id="comment" rows="5" placeholder="input text!"></textarea>
-               <br />
             </div>
 
-            <input type="checkbox" name="subm" id="politic" />
-            <label for="politic">Согласен на все</label>
-            <br />
+            <div class="form-field"></div>
+
+            <ul>
+               <li class="item form-item">
+                  <input type="checkbox" name="subm" id="politic" />
+                  <label class="check-label" for="politic">Согласен работать за еду</label>
+               </li>
+            </ul>
 
             <button type="submit">Заявиться</button>
 
