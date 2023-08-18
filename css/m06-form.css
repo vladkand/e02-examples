@@ -83,12 +83,13 @@ input[type='radio'] {
 
 .form-field .date {
 }
+
 /* ===== FORM-BTN ===== */
 .form-btn {
    margin-top: 20px;
 }
 
-/* ===== FILTER-SIZE-FORM ===== */
+/* ================ FILTER-SIZE-FORM ===== */
 .form + .form {
    margin-top: 15px;
 }
@@ -108,11 +109,43 @@ input[type='radio'] {
    margin-top: 10px;
 }
 
+.size-filter-check {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
 .size-filter-label {
+   display: flex;
+   align-items: center;
+   margin-top: 8px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+
+   /* justify-content: space-between; */
+
    /* text-transform: uppercase;/ */
+   background-color: #ffffff;
+   cursor: pointer;
+
+   outline: 1px solid teal;
+}
+
+.size-filter-label:before {
+   display: block;
+   content: '';
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   border: 3px solid #2a2a2a;
+   border-radius: 4px;
+   background-color: #ffffff;
 }
 
 .size-filter-item-size {
+   display: inline-flex;
+   align-items: center;
+
    font-size: 18px;
    line-height: 24px;
    text-transform: uppercase;
@@ -120,13 +153,14 @@ input[type='radio'] {
 
 .size-filter-item-count {
    display: inline-block;
-   width: 24px;
-   height: 24px;
+   width: 30px;
+   height: 30px;
+   margin-left: auto;
 
    font-size: 18px;
    color: #ffffff;
    background-color: #2a2a2a;
    border-radius: 50%;
    text-align: center;
-   line-height: 24px;
+   line-height: 30px;
 }
