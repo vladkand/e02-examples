@@ -122,12 +122,9 @@ input[type='radio'] {
    padding-top: 5px;
    padding-bottom: 5px;
 
-   /* justify-content: space-between; */
-
-   /* text-transform: uppercase;/ */
-   background-color: #ffffff;
    cursor: pointer;
 
+   background-color: #ffffff;
    outline: 1px solid teal;
 }
 
@@ -137,9 +134,14 @@ input[type='radio'] {
    width: 20px;
    height: 20px;
    margin-right: 10px;
-   border: 3px solid #2a2a2a;
-   border-radius: 4px;
-   background-color: #ffffff;
+
+   /* border: 3px solid #2a2a2a; */
+   /* border-radius: 4px; */
+   /* background-color: #ffffff; */
+
+   background-image: url(../images/square-regular.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 .size-filter-item-size {
@@ -163,4 +165,20 @@ input[type='radio'] {
    border-radius: 50%;
    text-align: center;
    line-height: 30px;
+}
+
+.size-filter-check:checked + .size-filter-label {
+   padding-left: 20px;
+}
+
+/* .size-filter-check:checked + .size-filter-label::before {
+   background-image: url(../images/check-solid.svg);
+} */
+
+.size-filter-check:checked + .size-filter-label .size-filter-item-size {
+   color: orange;
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-item-count {
+   background-color: orange;
 }
