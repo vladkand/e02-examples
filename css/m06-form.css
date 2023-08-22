@@ -92,12 +92,13 @@ input[type='radio'] {
 }
 
 /* ================ FILTER-SIZE-FORM ===== */
+
 .form + .form {
    margin-top: 15px;
 }
 
 .checkbox {
-   appearance: none;
+   /* appearance: none; */
 }
 
 .size-filter-title {
@@ -188,3 +189,5 @@ input[type='radio'] {
 .size-filter-check:checked + .size-filter-label .size-filter-item-count {
    background-color: orange;
 }
+
+/* TEST */
