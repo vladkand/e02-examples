@@ -33,7 +33,7 @@
          <div class="container">
             <h2>INPUT внутри label (так плохо стилизировать)</h2>
 
-            <form class="">
+            <form class="prime-form form">
                <label
                   >NonaMe
                   <input type="text" name="myname" />
@@ -42,10 +42,49 @@
             </form>
          </div>
 
-         <div class="container"></div>
+         <!-- ========== TRANS-FORM ПОЗИЦИОНГИРОВАНИЕ  ========== -->
+         <form action="#" class="trans-form form" autocomplete="off">
+            <h3 class="trans-form-title">Позиционирование Label</h3>
+            <div class="trans-form-field">
+               <!-- ===== FIELD NAME ===== -->
+               <input
+                  class="trans-form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Petrov Ivan"
+               />
+               <label class="trans-form-label" for="name">MyName</label>
+            </div>
 
+            <div class="trans-form-field">
+               <!-- FIELD TEL -->
+               <input
+                  class="trans-form-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="+3**222-322-223"
+               />
+               <label class="trans-form-label" for="tel">Telephone</label>
+            </div>
+
+            <div class="trans-form-field">
+               <!-- MAIL -->
+               <input
+                  class="trans-form-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  autocomplete="off"
+                  placeholder="name@mail.ci"
+               />
+               <label class="trans-form-label" for="mail">Mail</label>
+            </div>
+         </form>
+
+         <!-- =========== FORM FIELD Stylised ============= -->
          <form class="form js-speaker-form" autocomplete="on">
-            <!-- FORM FIELD -->
             <div class="form-field">
                <!-- ===== FIELD NAME ===== -->
                <label class="form-label" for="name">MyName</label>

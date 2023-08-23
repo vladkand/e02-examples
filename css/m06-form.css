@@ -2,6 +2,41 @@ textarea {
    resize: none;
 }
 
+/* ========== TRANS-FORM ПОЗИЦИОНГИРОВАНИЕ  ========== */
+.trans-form-title {
+   text-align: center;
+   color: red;
+}
+
+.trans-form-field {
+   display: flex;
+   position: relative;
+   margin-top: 40px;
+}
+
+.trans-form-input {
+   width: 100%;
+   padding: 10px 20px;
+}
+
+.trans-form-label {
+   position: absolute;
+   top: 50%;
+   left: 30px;
+
+   font-weight: 600;
+   background-color: teal;
+
+   transform: translateY(-50%);
+   transition: transform 500ms linear;
+}
+
+.trans-form-input:focus + .trans-form-label {
+   color: #ffffff;
+   /* transform: translateY(-50px) translateX(-30px); */
+   transform: translate(-30px, -50px);
+}
+/* =========== FORM FIELD Stylised ============= */
 .form {
    width: 600px;
    margin: 0 auto;
@@ -12,7 +47,7 @@ textarea {
 
    box-shadow: 0 0 10px 3px rgba(20, 40, 100, 0.4);
 }
-.form div + div {
+.form-field + .form-field {
    margin-top: 20px;
 }
 
@@ -91,6 +126,7 @@ input[type='radio'] {
    margin-top: 20px;
 }
 
+/* =================================== */
 /* ================ FILTER-SIZE-FORM ===== */
 
 .form + .form {
