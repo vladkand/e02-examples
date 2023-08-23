@@ -17,6 +17,12 @@ textarea {
 .trans-form-input {
    width: 100%;
    padding: 10px 20px;
+
+   cursor: pointer;
+}
+
+.trans-form-input:placeholder-shown {
+   background-color: orange;
 }
 
 .trans-form-label {
@@ -31,11 +37,19 @@ textarea {
    transition: transform 500ms linear;
 }
 
-.trans-form-input:focus + .trans-form-label {
+.trans-form-input:hover + .trans-form-label,
+.trans-form-input:focus + .trans-form-label,
+.trans-form-input:not(:placeholder-shown) + .trans-form-label {
    color: #ffffff;
    /* transform: translateY(-50px) translateX(-30px); */
    transform: translate(-30px, -50px);
 }
+
+/* === ВАЖНО Если нет placeholder ==>>>> */
+/* ==>>>> .class:not(:placeholder-shown) */
+/* ===> вместо него ставят пробел >==== */
+/* ===>> placeholder=" " <<===== */
+
 /* =========== FORM FIELD Stylised ============= */
 .form {
    width: 600px;

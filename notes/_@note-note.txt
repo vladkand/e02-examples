@@ -4,4 +4,15 @@
              appearance: none;
         }
     
-    
+
+*** FORM ***
+     !!!ВАЖНО
+     
+      Если plceholder отсутствует
+     
+     при оформлении позиционирования label
+
+     >> .class:not(:placeholder-shown)
+
+     вместо него в атрибут ставят пробел ->>
+     ->> placeholder=" "
