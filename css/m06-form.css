@@ -9,11 +9,19 @@ textarea {
 }
 
 .trans-form-field {
+   padding: 10px;
    display: flex;
    position: relative;
    margin-top: 40px;
+   background-color: teal;
 }
 
+/* ===== Соврем. Метод NEW SCOL metod */
+
+.trans-form-field:focus-within {
+   background-color: #fff;
+}
+/* ================== */
 .trans-form-input {
    width: 100%;
    padding: 10px 20px;
@@ -176,8 +184,9 @@ input[type='radio'] {
    display: flex;
    align-items: center;
    margin-top: 8px;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   padding: 5px 5px;
+   /* padding-top: 5px; */
+   /* padding-bottom: 5px; */
 
    cursor: pointer;
 
@@ -192,11 +201,11 @@ input[type='radio'] {
    height: 20px;
    margin-right: 10px;
 
-   /* border: 3px solid #2a2a2a; */
-   /* border-radius: 4px; */
-   /* background-color: #ffffff; */
+   border: 3px solid #2a2a2a;
+   /* border-radius: 50%; */
+   background-color: #ffffff;
 
-   background-image: url(../images/square-regular.svg);
+   /* background-image: url(../images/square-regular.svg); */
    background-repeat: no-repeat;
    background-size: contain;
 }
@@ -224,20 +233,45 @@ input[type='radio'] {
    line-height: 30px;
 }
 
+/* ===== Если checked - увеличиваем отступ ==== */
 .size-filter-check:checked + .size-filter-label {
-   padding-left: 20px;
+   padding-left: 24px;
 }
 
-/* .size-filter-check:checked + .size-filter-label::before {
+/* ===== Если checked - меняем иконку  ==== */
+.size-filter-check:checked + .size-filter-label::before {
+   border: none;
+   background-color: orange;
    background-image: url(../images/check-solid.svg);
-} */
+
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* ===== Если checked - меняем color span и фон второго span ==== */
 
 .size-filter-check:checked + .size-filter-label .size-filter-item-size {
    color: orange;
 }
 
 .size-filter-check:checked + .size-filter-label .size-filter-item-count {
+   color: #000;
    background-color: orange;
+}
+
+/* ====== Прячем CHECKBOX ======= */
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
 }
 
 /* TEST */

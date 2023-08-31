@@ -28,20 +28,23 @@
          </div>
       </header>
       <main class="">
-         <!-- ========================= FILTER-FORM === -->
+         <!-- ====================== FILTER-FORM =============== -->
          <h2 class="container">Модуль 7 - верстка кастомных элементов форм</h2>
          <form action="#" class="size-filter-form form">
             <section class="size-filter-section">
                <h2 class="size-filter-title appearance">Size select</h2>
+
                <ul class="size-filter-list">
                   <li class="size-filter-item">
                      <input
-                        class="size-filter-check checkbox"
+                        class="size-filter-check checkbox visually-hidden"
                         type="checkbox"
                         name="item-size"
                         id="s-size"
                         value="smile"
                      />
+
+                     <!-- ==== LABEL ставим после INPUT ===== -->
 
                      <label class="size-filter-label" for="s-size">
                         <span class="size-filter-item-size"> s</span>
@@ -51,7 +54,7 @@
 
                   <li class="size-filter-item">
                      <input
-                        class="size-filter-check checkbox"
+                        class="size-filter-check checkbox visually-hidden"
                         type="checkbox"
                         name="item-size"
                         id="m-size"
@@ -64,7 +67,7 @@
 
                   <li class="size-filter-item">
                      <input
-                        class="size-filter-check checkbox"
+                        class="size-filter-check checkbox visually-hidden"
                         type="checkbox"
                         name="item-size"
                         id="l-size"
@@ -78,17 +81,6 @@
                </ul>
             </section>
          </form>
-         <!-- INPUT внутри label (так плохо стилизировать) -->
-
-         <!--  Для группы radiobatton и checkbox значение "name" должно быть ОДИНАКОВОЕ!!! -->
-         <!-- <input type="radio" name="level" value="junior" id="junior" />
-            <label for="junior">Junior</label>
-    
-            <input type="radio" name="level" value="midle" id="midle" />
-            <label for="midle">Midle</label>
-    
-            <input type="radio" name="level" value="senior" id="senior" />
-            <label for="senior">Senior</label> -->
       </main>
 
       <script>
